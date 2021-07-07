@@ -3,11 +3,12 @@
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> <!--Reference jQuery as a resource used in the page. -->
 </head>
+
 <script>
 $(document).ready(function() { //jQuery syntax telling the page to affect the document and ready function
     $("html").append( //Calls the html page and instructs it to ammend itself with the following elements
         "<body>\
-            <div id='container'>\ 
+            <div id='container'>\
                 <div id='inner'>\
                     <h1>Basic jQuery</h1>\
                     <p id='1'>Paragraph 1</p>\
@@ -16,14 +17,11 @@ $(document).ready(function() { //jQuery syntax telling the page to affect the do
                 </div>\
             </div>\
         </body>"
-   ); //This body section is going to be affected by the following jQuery commnads
-   $("#2").css({"color":"red"}); //This is targeting paragraph id 2 and changing the css to red 
-   $("#3").click(function() { //this is creating a click function that will interact with webpage when the user clicks the targeted id
-       $('h1').hide(); //when id number 3 is click, jQuery instructs h1 to be hidden
-   });
-
-
+    ); //This body section is going to be affected by the following jQuery commands
+    $("#2").css({"color":"red"}); //This is targeting paragraph id 2 and changing the css to red 
+    $("#3").click(function() { //this is creating a click function that will interact with webpage when the user clicks the targeted id
+        $('h1').hide(); //when id number 3 is click, jQuery instructs h1 to be hidden
+    });
 });
-
 </script>
 </html>
